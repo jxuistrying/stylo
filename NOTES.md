@@ -25,3 +25,21 @@ grid is a 2d layout and i think grid-cols-1 is the column spacing for the margin
 
 Build It Yourself Test:
 8. Without looking at your existing code or using AI, could you create a brand new component called Footer.tsx that shows "© 2026 Stylo" centered at the bottom of every page? Describe the steps you'd take — what file you'd create, what you'd write in it, and where you'd import it.
+
+create table inspiration_images (
+  id uuid default gen_random_uuid() primary key,
+  user_id uuid references auth.users(id) on delete cascade,
+  image_url text not null,
+  title text,
+  created_at timestamp with time zone default now()
+);
+
+
+create table wishlist_items (
+    id uuid default gen_random_uuid() primary key,
+    user_id uuid references auth.users(id) on delete cascade,
+    product_name text not null,
+    price integer,
+    store_url text,
+    created_at timestamp with time zone default now()
+);
