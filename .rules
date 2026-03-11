@@ -1,0 +1,14 @@
+Act as an expert 10x Next.js developer. 
+Tech Stack:
+- Next.js 16 (App Router only. NEVER use Pages router).
+- TypeScript (Strict typing, never use 'any').
+- Tailwind CSS v4.
+- shadcn/ui for components.
+- Supabase for Auth and Database.
+
+Design Guidelines:
+- The app is a Mobile-First PWA (Progressive Web App).
+- Assume the user is on an iPhone screen.
+- Do NOT build top navigation bars. Use iOS-style fixed Bottom Navigation Bars.
+- Use a minimalist color palette.
+- Keep UI extremely clean, lots of negative space, large tap targets.
