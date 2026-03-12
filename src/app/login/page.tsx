@@ -37,12 +37,14 @@ export default function LoginPage() {
 
                     <div className="pt-4 flex flex-col gap-3">
                         <Button
+                            type="submit"
                             formAction={login}
                             className="w-full bg-white text-black hover:bg-zinc-200 rounded-xl py-6 font-medium text-base h-12"
                         >
                             Log in
                         </Button>
                         <Button
+                            type="submit"
                             formAction={signup}
                             variant="outline"
                             className="w-full bg-transparent border-zinc-700 text-white hover:bg-zinc-800 rounded-xl py-6 font-medium text-base h-12"
